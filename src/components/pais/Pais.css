@@ -1,0 +1,45 @@
+.pais{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+.sun-contenedor-p{
+  text-align: center;
+  border: none;
+  padding: 3px 0;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.hora{
+  background-color: yellow;
+
+}
+.ciudad{
+  background-color: yellow;
+
+}
+@media (max-width:800px) {
+  .pais{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    gap: 0;
+  }
+  .sun-contenedor-p{
+  text-align: center;
+  border: none;
+  padding: 3px 0;
+  border-radius: 5px;
+  font-size: 14px;
+  }
+}
+@media (max-width:480px) {
+  .pais{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+}

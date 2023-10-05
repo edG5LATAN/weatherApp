@@ -1,0 +1,60 @@
+.sun-contenedor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 2em;
+}
+.sunsite{
+  background-image: url('../../../public/img/sol/sunrise.jpg');
+  width: 80px;
+  height: 80px;
+  background-position: center;
+  background-size: cover;
+}
+.sunset{
+  width: 80px;
+  height: 80px;
+  background-image: url('../../../public/img/sol/sunset.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.mostrar{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  transition: ease-in-out;
+  border-radius: 5px;
+  border: 1px solid green;
+}
+.sunset:hover{
+  color: rgb(156, 104, 6);
+  transition: ease-in-out;
+}
+.sunsite:hover{
+  color:rgb(153, 163, 10);
+  transition: ease-in-out;
+}
+.mostrar:hover{
+  transform: scale(1.1);
+  box-shadow: 2px 2px 2px 2px;
+}
+p{
+  font-size: small;
+}
+.temp{
+  padding-top: 15px;
+  color: blue;
+  font-size: 18px;
+  font-weight: bold;
+}
+.icono_weater{
+  width: 200px;
+}
+.icono_weater:hover{
+  transform: scale(1.2);
+}
+.sun-contenedor-p{
+  text-align: center;
+}

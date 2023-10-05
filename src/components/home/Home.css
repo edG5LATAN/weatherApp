@@ -1,0 +1,88 @@
+.home{
+    margin: 20px 0;
+    padding: 15px 0;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    /* background-image: url('../../../public/img/fondoNubes.jpg'); */
+}
+
+.contenedor1{
+    margin-top: 10px;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.733);
+    /* background-color: rgba(177, 204, 228, 0.788); */
+    /* border: 2px solid black; */
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 19px;
+    box-shadow: 2px 2px 2px 2px ;
+}
+.principal{
+    margin-top: 20px; 
+}
+button{
+    margin: 15px 0;
+    width: 150px;
+    padding: 5px 3px;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 0;
+    font-size: 16px;
+    background-color: rgb(171, 209, 209);
+}
+.la{
+    padding: 3px 0;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    border:none;
+    background-color: lightblue;
+}
+button:hover{
+    background-color: lightseagreen;
+    cursor: pointer;
+    transform: scale(1.02);
+}
+.geolacation{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+h2{
+  margin: 10px 0;
+  padding: 10px 0;
+}
+.imagen-home{
+    width: 60%;
+    border-radius: 18px;
+    box-shadow: 2px 2px 2px 2px ;
+}
+@media (max-width:800px) {
+    .contenedor1{
+        width: 90%;
+        background-color: rgba(255, 255, 255, 0.486);
+        font-weight: bold;
+    }
+  .geolacation{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+  }
+    .la{
+        font-size: 14px;
+    }
+    .imagen-home{
+        width: 90%;
+    }
+}

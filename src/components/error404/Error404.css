@@ -1,0 +1,57 @@
+.error404{
+  height: 100vmin;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://pa1.aminoapps.com/7676/36978456de8363487faaa6547a82be7e592c885er1-480-214_hq.gif');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.contenedor-error404{ 
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 4px 3px 4px 3px lightblue;
+  padding: 20px ; 
+  gap: 1em;
+  border-radius:10px ;
+}
+.btn {
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  display: inline-block;
+  width: 358px;
+  padding: 5px;
+  z-index: 5;
+  font-size: 25px;
+  margin: 0 auto;
+  color: #33cc99;
+  text-decoration: none;
+  margin-right: 10px;
+}
+._404 {
+  font-size: 200px;
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+  height: 250px;
+  letter-spacing: 15px;
+}
+._1 {
+  text-align: center;
+  display: block;
+  position: relative;
+  letter-spacing: 12px;
+  font-size: 3em;
+  line-height: 70%;
+}
+._2 {
+  text-align: center;
+  display: block;
+  position: relative;
+  font-size: 20px;
+}

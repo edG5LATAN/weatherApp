@@ -1,0 +1,51 @@
+.header{
+    /* background-color: rgba(173, 216, 230, 0.603); */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 5px 0;
+    height: 60px;
+    /* background-image: url('../../../public/img/fondoNubes.jpg'); */
+}
+.header-logo{
+  position: absolute;
+  top: 5px;
+  left: 40px;
+  width: 100px;
+}
+.imagen-logo{
+  width: 80px;
+}
+.imagen-logo:hover{
+  cursor: pointer;
+  animation: rotari 2s alternate linear;
+}
+@keyframes rotari{
+  0%{
+    rotate: 10deg;
+  }
+  25%{
+    rotate: -10deg;
+  }
+  50%{
+    rotate: 10deg; 
+  }
+  75%{
+    rotate: -10deg; 
+  }
+  10%{
+    rotate: 10deg;
+  }
+}
+@media (max-width:480px) {
+  .header-logo{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 100px;
+  }
+  .header h2{
+    font-size: 19px;
+  }
+}
