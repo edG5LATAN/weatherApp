@@ -68,7 +68,7 @@ h2{
 }
 @media (max-width:800px) {
     .home{
-      height:800px;
+       min-height:800px ;
     }
     .contenedor1{
         width: 90%;
