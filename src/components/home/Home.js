@@ -47,9 +47,9 @@ function Home() {
         <button onClick={() => buscar()}>Search</button>
         <div className="pais">
           <label>Latitude:</label>
-          <input className="sun-contenedor-p la" value={latitud} />
+          <input readOnly className="sun-contenedor-p la" value={latitud} />
           <label>Longitude: </label>
-          <input className="sun-contenedor-p la" value={longitud} />
+          <input readOnly className="sun-contenedor-p la" value={longitud} />
         </div>
 
       </div>

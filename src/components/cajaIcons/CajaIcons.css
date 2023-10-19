@@ -1,52 +1,64 @@
 .sun-contenedor{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: 100%;
   gap: 2em;
+  padding: 10px;
 }
-.sunsite{
-  background-image: url('../../../public/img/sol/sunrise.jpg');
-  width: 80px;
-  height: 80px;
-  background-position: center;
-  background-size: cover;
+.caja-img-port{
+  background-color: lightseagreen;
+
+  /* background-color: rgb(127, 170, 132); */
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid black;
+  box-shadow: 3px 3px 3px;
+  margin: 10px 0;
 }
-.sunset{
-  width: 80px;
-  height: 80px;
-  background-image: url('../../../public/img/sol/sunset.jpg');
-  background-position: center;
-  background-size: cover;
+.cajaimg{
+  border-radius: 10px;
+  overflow: hidden;
 }
-.mostrar{
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  transition: ease-in-out;
-  border-radius: 5px;
-  border: 1px solid green;
-}
-.sunset:hover{
-  color: rgb(156, 104, 6);
-  transition: ease-in-out;
-}
-.sunsite:hover{
-  color:rgb(153, 163, 10);
-  transition: ease-in-out;
-}
-.mostrar:hover{
+.hoverimg:hover{
   transform: scale(1.1);
-  box-shadow: 2px 2px 2px 2px;
+
+}
+.caja-mini{
+  width: 160px;
+  background-color: rgb(57, 107, 139);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px;
+}
+
+.sunset{
+  width: 90%;
+  /* height: 80px; */
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+}
+
+
+.caja-mini-p{
+  color: white;
+  padding: 5px 0;
 }
 p{
   font-size: small;
+  font-weight: bold;
 }
 .temp{
   padding-top: 15px;
-  color: blue;
-  font-size: 18px;
+  color: white;
+  font-size: 20px;
   font-weight: bold;
 }
 .icono_weater{
@@ -57,4 +69,22 @@ p{
 }
 .sun-contenedor-p{
   text-align: center;
+}
+@media (max-width:480px) {
+  .sun-contenedor{
+    gap: 1em;
+    padding: 3px;
+  }
+  .caja-mini{
+    width: 150px;
+    gap: 1em;
+    padding: 5px 0;
+    margin: 0;
+  }
+  .hoverimg{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border-radius: 5px;
+  }
 }
