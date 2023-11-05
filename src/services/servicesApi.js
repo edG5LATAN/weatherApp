@@ -1,9 +1,9 @@
 
 
 const detalleData=(latitud,longitud)=>{
-  return fetch(`https://api.weatherbit.io/v2.0/current?lat=${latitud}&lon=${longitud}&key=ebd8bbca5c684ae88f690fe3484dca51`)
+  return fetch(`https://api.tutiempo.net/json/?lan=es&apid=q5DXaz4qXXXgZr4&ll=${latitud},${longitud}`)
   .then(res=>res.json())
-
+  .catch(error=>console.log(error))
 }
 
 

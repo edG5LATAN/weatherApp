@@ -6,17 +6,17 @@ function CajaIcons({data}) {
   return (
     <>
       <div>
-        <h2>{`${data.weather.description}`}</h2>
+        <h2>{`${data.day1.text}`}</h2>
         <div className="caja-img-port">
-           <p className="temp">{data.temp}° Celcius</p>
-          <img src={`./img/icons/${data.weather.icon}.png`} alt="data" className="icono_weater" />
+           <p className="temp">temp max {data.day1.temperature_max}° Celcius</p>
+          <img src={`https://v5i.tutiempo.net/wi/01/70/${data.day1.icon}.png`} alt="data" className="icono_weater" />
         </div>
       </div>
       
       <div className="sun-contenedor">
         <div className="caja-mini">
           <p>Sunrise</p>
-          <p className="caja-mini-p">{data.sunrise} AM</p>
+          <p className="caja-mini-p">{data.day1.sunrise} AM</p>
 
           <div className="cajaimg">
             <img className="sunset hoverimg" src="./img/sol/sunsite.png" alt=""/>
@@ -25,7 +25,7 @@ function CajaIcons({data}) {
 
         <div className="caja-mini">
           <p>Sunset</p>
-          <p className="caja-mini-p">{data.sunset} PM</p>
+          <p className="caja-mini-p">{data.day1.sunset} PM</p>
 
           <div className="cajaimg">
             <img className="sunset hoverimg" src="./img/sol/sunrest.png" alt="icono amanecer"/>
@@ -34,7 +34,7 @@ function CajaIcons({data}) {
 
         <div className="caja-mini">
           <p>Speed</p>
-          <p className="caja-mini-p">{data.wind_spd}</p>
+          <p className="caja-mini-p">{data.day1.wind}</p>
            
           <div className="cajaimg">
             <img className="sunset hoverimg" src="./img/sol/iconoViento.png" alt="icono viento"/>
@@ -42,8 +42,8 @@ function CajaIcons({data}) {
         </div>
 
         <div className="caja-mini">
-          <p>UV</p>
-          <p className="caja-mini-p">{data.uv}</p>
+          <p>Humidity</p>
+          <p className="caja-mini-p">{data.day1.humidity}</p>
           <div className="cajaimg">
             <img className="sunset hoverimg" src='./img/sol/uvSolar.png' alt=""/>
           </div>
@@ -51,6 +51,10 @@ function CajaIcons({data}) {
         
         
       </div>
+      <div className='agradecimiento'>
+                  <p>agradecimiento a:<a href="https://www.tutiempo.net">api.clima</a> </p>
+
+    </div>
     </>
   );
 }

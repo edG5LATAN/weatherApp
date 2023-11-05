@@ -21,6 +21,11 @@
   background-color: yellow;
 
 }
+.agradecimiento{
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+}
 @media (max-width:800px) {
   .pais{
     display: flex;

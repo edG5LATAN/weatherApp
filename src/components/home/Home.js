@@ -37,7 +37,6 @@ function Home() {
      })
      .catch(error=>console.log(error))
   }
-
  
 
   return (
@@ -58,8 +57,8 @@ function Home() {
        
       <div className="contenedor1">
         <h2>Additional data</h2>
-        <Pais data={data.data[0]} />
-        <CajaIcons data={data.data[0]}/>
+        <Pais data={data} />
+        <CajaIcons data={data}/>
       </div>
       
       </>:<img src="./img/imagenPortada.gif" alt="wheater" className="imagen-home" />
