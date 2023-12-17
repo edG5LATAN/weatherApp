@@ -1,7 +1,7 @@
-
+const api='4wT44aXaXqXNZ7z'
 
 const detalleData=(latitud,longitud)=>{
-  return fetch(`https://api.tutiempo.net/json/?lan=es&apid=q5DXaz4qXXXgZr4&ll=${latitud},${longitud}`)
+  return fetch(`https://api.tutiempo.net/json/?lan=es&apid=${api}&ll=${latitud},${longitud}`)
   .then(res=>res.json())
   .catch(error=>console.log(error))
 }
